@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% from 'pagination.html' import render_pagination %}
+
+{% block content %}
+<div class="h-100 text-center d-flex p-3 bg-light">
+    <div class="m-auto">
+        <h1 class="title mb-5 font-weight-bold">Книжки <i>(букс)</i></h1>
+            <a class="btn btn-outline-dark btn-lg col-6 mx-5 text-center text-uppercase font-weight-bold" href="{{ url_for('books.index') }}">Каталог</a>
+            
+        <div class="container">
+            <p class="description w-75 mb-5 px-13 mx-auto">
+            <h3>Читайте книжки и будете счастливы блин буду</h3>
+            <h5>кстати вот вам интересное слово на разных языках:</h5>
+            <h5>Книга = Book = Buch = Livre = Libro = 书 = 本 </h5>
+            <h6>Догадайся на каких это языках :]</h6>
+            <h7>(чтобы догадаться нужны <i>книжки</i>)</h7>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
