@@ -14,7 +14,7 @@ class BooksFilter:
     def perform(self):
         self.__filter_by_name()
         self.__filter_by_category_ids()
-        return self.query.order_by(Book.created_at.desc())
+        return self.query.order_by(Book.year.desc())
 
     def __filter_by_name(self):
         if self.name:

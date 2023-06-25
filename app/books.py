@@ -13,7 +13,7 @@ bp = Blueprint('books', __name__, url_prefix='/books')
 PER_PAGE = 3
 
 BOOK_PARAMS = [
-    'author_id', 'name', 'category_id', 'short_desc', 'full_desc'
+    'author_id', 'name', 'category_id', 'publisher', 'volume', 'short_desc', 'full_desc'
 ]
 
 def params():

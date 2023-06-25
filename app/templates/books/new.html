@@ -21,12 +21,20 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="teachers">Создатели</label>
-                        <select class="form-select" name="teachers_ids" id="teachers" multiple>
-                            {% for user in users %}
-                                <option value="{{ user.id }}" {% if user.id == current_user.id %}selected{% endif %}>{{ user.full_name }}</option>
-                            {% endfor %}
-                        </select>
+                        <label for="author">Автор</label>
+                        <input class="form-control" type="text" name="author" id="author" value="{{ book.author }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="year">Год</label>
+                        <input class="form-control" type="text" name="year" id="year" value="{{ book.year }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="izd">Издатель</label>
+                        <input class="form-control" type="text" name="izd" id="izd" value="{{ book.izd }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kolvo">Количество страниц</label>
+                        <input class="form-control" type="kolvo" name="kolvo" id="kolvo" value="{{ book.kolvo }}">
                     </div>
                     <div class="mb-3 d-flex flex-column flex-grow-1">
                         <label for="short_description">Краткое описание</label>
